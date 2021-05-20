@@ -1,36 +1,26 @@
-#include<stdio.h>
-#include<cs50.h>
-int main(void)
-{
-	int type = get_int("Enter type of pattern (1 or 2) ");
-	int num_rows = get_int("Number of rows");
-	int c=num_rows;
-	switch(type)
-	{
-		case 1: for(int i=1;i<=num_rows;i++)
-			{
-				for(int j=num_rows;j>=i;j--)
-				{
-					printf("#");
-				}
-				printf("\n");
-			}
-			break;
- 
-		case 2: for(int i=1;i<=num_rows;i++)
-			{
-				for(int k=i;k<num_rows;k++)
-				{
-					printf(" ");
-				}
-				for(int j=1;j<=i;j++)
-				{
-					printf("#");
-				}
-				printf("\n");
-			}
-			break;
- 
-		default: break;
-	}
+#include <stdio.h> 
+#include <cs50.h>
+int main() 
+{float max,m,n; 
+	printf("Enter 3 numbers \n"); 
+	float a= get_float("side 1 %0.0f \n",a);  
+	float b= get_float("side 2 %0.0f \n",b); 
+	float c= get_float("side 3 %0.0f \n",c); 
+	if(a>b&&a>c) 
+	{max=a;
+	m=b; 
+	n=c;} 
+	else if(b>c) 
+	{max=b;
+	m=a; 
+	n=c;} 
+	else  
+	{max=c; 
+	 m=a; 
+	 n=b;}
+if(max*max== m*m+n*n)
+     printf("Yes"); 
+	 else 
+	 printf("No"); 
+	 	
 }
